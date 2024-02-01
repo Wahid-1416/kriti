@@ -106,6 +106,17 @@ nav{
     line-height: 27px;
 
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+#para::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#para {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 
 #para div{
     padding: 40px 0;
