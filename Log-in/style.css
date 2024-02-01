@@ -87,7 +87,7 @@ nav{
     font-weight: 500;
     font-size: 4vw;
     padding-top: 130px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 #left h1 span{
@@ -111,6 +111,7 @@ nav{
     padding: 40px 0;
 }
 #para1{
+    padding-top: 20px;
     border-bottom: 8px solid #6AD688;
 
 }
