@@ -22,4 +22,71 @@ function swipper(){
       }
 }
 
+
+function star(){
+
+  const stars = document.querySelectorAll('.star-s');
+  
+  let selectedRating = 0;
+  
+  stars.forEach((star) => {
+    star.addEventListener('mouseover', () => {
+      const rating = parseInt(star.getAttribute('data-rating'));
+      highlightStars(rating);
+    });
+  
+    star.addEventListener('mouseout', () => {
+      highlightStars(selectedRating);
+    });
+  
+    star.addEventListener('click', () => {
+      selectedRating = parseInt(star.getAttribute('data-rating'));
+      displayUserRating(selectedRating);
+    });
+  });
+  
+  function highlightStars(rating) {
+    stars.forEach((star) => {
+      const starRating = parseInt(star.getAttribute('data-rating'));
+      if (starRating <= rating) {
+        star.src = './Images/star.svg';
+      } else {
+        star.src = './Images/unstared.svg';
+      }
+    });
+  }
+
+}  
+
+function feedback(){
+
+  const feedB=document.querySelector("#nox")
+  const but=document.querySelector("#FeedBackDownButton")
+  const feedbackText=document.querySelector("#text")
+  const sub=document.querySelector("#submiting")
+  let flag=0;
+  
+  feedB.addEventListener("click",() =>{
+      if(flag==0){
+        feedbackText.style.display="flex";
+        sub.style.display="flex";
+        but.style.transform="rotate(90deg)";
+        flag=1
+      }
+      else{
+        feedbackText.style.display="none";
+        sub.style.display="none";
+        but.style.transform="rotate(0deg)";
+        flag=0
+      }
+  }
+  )
+}
+
+
+
+star()
 swipper()
+feedback()
+
+

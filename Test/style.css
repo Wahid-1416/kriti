@@ -1,0 +1,19 @@
+.feedback-container {
+    text-align: center;
+  }
+  
+  .stars {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .star {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .user-rating {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
