@@ -168,6 +168,7 @@ input:focus {
     overflow: scroll;
 }
 .person{
+    position: relative;
     background-color: #272727;
     height: 55px;
     display: flex;
@@ -308,3 +309,36 @@ inf3{
 
 }
 
+#chats>.day:nth-child(1){
+    margin-top: -5px;
+}
+
+
+
+#person-1::after{
+    content: "";
+    background-color: #72B5E6;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
+#person-3::after{
+    content: "";
+    background-color: #72B5E6;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
+#person-9::after{
+    content: "";
+    background-color: #72B5E6;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+}
