@@ -166,8 +166,22 @@ input:focus {
 #persons{
     /* flex: auto; */
     overflow: scroll;
+
 }
+
+
+#persons::-webkit-scrollbar {
+    display: none;
+  }
+  
+#persons {
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+}
+
+
 .person{
+    cursor: pointer;
     position: relative;
     background-color: #272727;
     height: 55px;
@@ -230,6 +244,15 @@ input:focus {
     overflow: scroll;
 }
 
+#chats::-webkit-scrollbar {
+    display: none;
+}
+  
+
+#chats {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
 
 
 #typingBox{
@@ -255,6 +278,10 @@ input:focus {
     gap: 10px;
 }
 
+#attach img:hover{
+    fill: #fff;
+    cursor: pointer;
+}
 
 inf{
     padding: 10px 10px;
