@@ -71,10 +71,23 @@ nav{
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -19.8%, rgba(255, 255, 255, 0.256) 350.64%);
     color: #BCBCBC;
     font-weight: 300;
-    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+input:focus {
+        outline: none;
+      }
+
+#search input{
+    width: 100%;
+    margin-right: 30px;
+    padding: 0px 10px;
+    font-size: 16px;
+    background-color: #00000000;
+    border: none;
+
 }
 
 #nav-part2 a{
@@ -139,10 +152,15 @@ nav{
     
 }
 
-#search2 span{
+#search2 input{
+    background-color: #272727;
     color: #BCBCBC;
     font-weight: 200;
     font-size: 16px;
+    border: none;
+    flex: auto;
+    padding: 5px 10px;
+    margin-right: 10px;
 }
 
 #persons{
@@ -180,6 +198,7 @@ nav{
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 #inf{
