@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "Lexend";
+    src: url(./font/Lexend-VariableFont_wght.ttf);
+}
+
+*{
+padding : 0;
+margin : 0;
+box-sizing: border-box;
+font-family: "Lexend";
+color: #fff;
+}
+
+body{
+    background-color: #181818;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#layer1{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    
+}
+
+#layer2{
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    bottom: -110px;
+    right: -110px;
+    background-color: #000000;
+    filter: blur(254.5px);
+}
+
+#main{
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    max-width: 2000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo{
+    width: 120px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+#search{
+    border-bottom: 1px solid #FFFFFF;
+    width: 30vw;
+    border-radius: 8px;
+    padding: 12px 20px;
+    height: 44px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -19.8%, rgba(255, 255, 255, 0.256) 350.64%);
+    color: #BCBCBC;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-part2 a{
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 10px;
+}
+#nav-part2 a:nth-child(2){
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -19.8%, rgba(255, 255, 255, 0.256) 350.64%);
+    border-bottom: 1px solid #fff;
+    border-radius: 8px;
+}
+
+#page1{
+    flex: auto;
+    overflow: hidden;
+    display: flex;
+}
+#left{
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+}
+#left>p{
+    font-weight: 300;
+    font-size: 46px;
+}
+#typeButton button{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 4px;
+    padding: 7px 15px;
+} 
+#personal{
+    border: none;
+    background-color: #FFFFFF;
+    color: #151515;
+}
+#global{
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #BCBCBC;
+    color: #BCBCBC;
+}
+
+#global:hover{
+    color: #fff;
+}
+
+
+#search2{
+    cursor: text;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+#search2 span{
+    color: #BCBCBC;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+#persons{
+    /* flex: auto; */
+    overflow: scroll;
+}
+.person{
+    background-color: #272727;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.person:hover{
+    background-color: #3B3B3B;
+}
+
+.profilePic{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#person-3{
+    background-color: #3B3B3B;
+}
+
+#right{
+    flex: auto;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#inf{
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    gap: 20px;
+    font-weight: 300;
+    font-size: 17px;
+}
+.Name{
+    font-weight: 400;
+}
+.line{
+    width: 1px;
+    background-color: white;
+    height: 17px;
+}
+#last-seen{
+    font-weight: 100;
+}
+
+#chats{
+    flex: auto;
+    padding-top: 30px;
+    overflow: scroll;
+}
+
+
+
+#typingBox{
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+#typingBox input{
+    flex: auto;
+    border: none;
+    background-color: #3B3B3B;
+    color: #BCBCBC;
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 30px;
+    padding: 5px 5px;
+}
+
+#attach{
+    display: flex;
+    gap: 10px;
+}
+
+
+inf{
+    padding: 10px 10px;
+    padding-bottom: 0;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    background-color: #272727;
+}
+
+inf2 div{
+    font-weight: 200;
+    font-size: 16px;
+
+}
+inf3{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 300;
+
+}
+
+.date,.time{
+    padding: 4px 0;
+    color: #BCBCBC;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+
+.chat p:nth-child(1){
+    padding-top: 10px;
+}
+
+.chat p{
+    padding: 20px 20px;
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 20px;
+    background-color: #272727;
+}
+
+.day{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    font-weight: 200;
+
+}
+
