@@ -23,12 +23,17 @@
 }
 
 #details-main{
+    /* display: none; */
+    scale: 0;
+    opacity: 0;
+    background-color: #0000005d;
     position: absolute;
     height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
     overflow: scroll;
+    
 }
 #details-main::-webkit-scrollbar {
     display: none;
@@ -174,7 +179,7 @@
 
 .swiper-slide{
     position: relative;
-    margin: 20px 30px;
+    margin: 20px 10px;
     overflow: hidden;
     height: 200px;
     width: fit-content;

@@ -1,7 +1,7 @@
 function swipper(){
 
     var swiper = new Swiper('.swiper', {
-        slidesPerView: 3,
+        slidesPerView: 2,
         direction: getDirection(),
         navigation: {
           nextEl: '.swiper-button-next',
@@ -21,7 +21,6 @@ function swipper(){
         return direction;
       }
 }
-
 
 function star(){
 
@@ -83,10 +82,41 @@ function feedback(){
   )
 }
 
+function popup_card(){
+
+  var pro=document.querySelector("#project1")
+  var popup=document.querySelector("#details-main")
+  var cross=document.querySelector("#cross")
+  
+  console.log(pro);
+  console.log(popup);
+  
+  
+  pro.addEventListener("click",()=>{
+        gsap.to("#details-main",{
+          scale: 1,
+          duration: 0.75,
+          opacity: 1
+        })
+  })
+  cross.addEventListener("click",()=>{
+    gsap.to("#details-main",{
+      scale: 0,
+      duration: 0.75,
+      opacity: 0
+    })
+  
+  })
+
+}  
+
+
 
 
 star()
 swipper()
 feedback()
+popup_card()
+
 
 
