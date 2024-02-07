@@ -85,11 +85,10 @@ function feedback(){
 function popup_card(){
 
   var pro=document.querySelector("#project1")
-  var popup=document.querySelector("#details-main")
+  var popu=document.querySelectorAll("#details-main:not(.details)")
   var cross=document.querySelector("#cross")
+  console.log(popu);
   
-  console.log(pro);
-  console.log(popup);
   
   
   pro.addEventListener("click",()=>{
@@ -105,7 +104,7 @@ function popup_card(){
       duration: 0.5,
       opacity: 0
     })
-  
+    
   })
 
 }  
