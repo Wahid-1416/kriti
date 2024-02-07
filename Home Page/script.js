@@ -20,6 +20,9 @@ function swipper(){
     
         return direction;
       }
+      var swiper1 = new Swiper('.swiper1', {
+        slidesPerView: 3,
+      })
 }
 
 function star(){
@@ -84,27 +87,28 @@ function feedback(){
 
 function popup_card(){
 
-  var pro=document.querySelector("#project1")
+  var pro=document.querySelectorAll(".swiper-slide1")
   var popu=document.querySelectorAll("#details-main:not(.details)")
   var cross=document.querySelector("#cross")
   console.log(popu);
   
   
-  
-  pro.addEventListener("click",()=>{
-        gsap.to("#details-main",{
-          scale: 1,
-          duration: 0.5,
-          opacity: 1
-        })
-  })
+  pro.forEach(p => {
+    p.addEventListener("click",()=>{
+          gsap.to("#details-main",{
+            scale: 1,
+            duration: 0.5,
+            opacity: 1
+          })
+    })
+  });
   cross.addEventListener("click",()=>{
     gsap.to("#details-main",{
       scale: 0,
       duration: 0.5,
       opacity: 0
     })
-    
+
   })
 
 }  
