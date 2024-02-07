@@ -95,14 +95,14 @@ function popup_card(){
   pro.addEventListener("click",()=>{
         gsap.to("#details-main",{
           scale: 1,
-          duration: 0.75,
+          duration: 0.5,
           opacity: 1
         })
   })
   cross.addEventListener("click",()=>{
     gsap.to("#details-main",{
       scale: 0,
-      duration: 0.75,
+      duration: 0.5,
       opacity: 0
     })
   
