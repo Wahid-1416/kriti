@@ -87,7 +87,7 @@ input:focus {
     font-size: 16px;
     background-color: #00000000;
     border: none;
-
+    color: white;
 }
 
 #nav-part2 a{
