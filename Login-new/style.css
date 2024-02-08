@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Lenxend";
+    src: url(./font/Lexend-VariableFont_wght.ttf);
+}
+
+
+
+*{
+    box-sizing: border-box;
+    color: white;
+    padding : 0;
+    margin : 0;
+    font-family: "Lenxend";
+}
+
+
+#main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(113.6deg, #1D1D1C -7.18%, rgba(29, 29, 28, 0) 91.27%);
+    overflow: hidden;
+
+}
+#rectriangle1{
+    position: absolute;
+
+    height: 100vh;
+    width: 100%;
+    background-color: #00000080;
+    backdrop-filter: blur(50px);
+
+}
+
+#rectriangle2{
+    position: absolute;
+    width: 1235px;
+    height: 1508px;
+    left: 1131px;
+    top: 13px;
+
+    
+    font-family: 'Montreal Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 223px;
+    line-height: 245px;
+    letter-spacing: -0.06em;
+    text-transform: capitalize;
+    
+    color: #212121;
+    
+}
+
+
+#page1{
+    padding: 25vh 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width:100%
+}
+
+#login>button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #111111;
+}
+
+
+
+
+
+
