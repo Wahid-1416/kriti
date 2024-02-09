@@ -225,11 +225,7 @@ input:focus {
 
 /* ----------------for popup card----------------------------------------*/
 
-#project1{
-    height: 80px;
-    width: 80px;
-    background-color: blue;
-}
+
 
 #details-main{
     /* display: none; */
@@ -254,6 +250,7 @@ input:focus {
     scrollbar-width: none;  /* Firefox */
 }
 #details{
+    z-index: -4;
     max-width: 900px;
     margin: auto;
     margin-top: 20px;
@@ -282,13 +279,16 @@ input:focus {
     left: 0;
     background: linear-gradient(73.02deg, #000000 -13.78%, rgba(0, 0, 0, 0.7) 60.46%, rgba(0, 0, 0, 0) 176.58%);
 }
-
-#cross{
+#banner>svg{
     position: absolute;
     z-index: 2;
     right: 30px;
     top: 30px;
     cursor: pointer;
+    fill: #BCBCBC;
+}
+#banner>svg:hover{
+    fill: #fff;
 }
 
 #inf{
@@ -459,6 +459,18 @@ input:focus {
     border-color: #FF93C1;
     color: #FF93C1;
 }
+#UX:hover{
+    background-color: #C9FF93;
+    color: #272727;
+}
+#Java:hover{
+    background-color: #4EB0E7;
+    color: #272727;
+}
+#AI:hover{
+    background-color: #FF93C1;
+    color: #272727;
+}
 
   
 
@@ -625,8 +637,6 @@ inf{
 /* ----------------for popup card----------------------------------------*/
 
 .swiper-slide1{
-    /* border: 2px solid wheat; */
-    /* margin: px; */
     overflow: hidden;
     height: fit-content;
     display: flex;
@@ -709,11 +719,35 @@ inf{
 
 }
 
-.next{
-    color: #d90000 !important;
+.swiper-button-next{
+    background-color: #272727;
+    border: 1px solid #BCBCBC;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #BCBCBC !important;
+    scale: 0.7;
+    justify-content: center;
+    align-items: center;
 }
-.pre{
-    color: #ff0000 !important;
+.swiper-button-prev{
+    scale: 0.7;
+    background-color: #272727;
+    border: 1px solid #BCBCBC;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #BCBCBC !important;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-next:hover{
+    color: #fff !important;
+    border-color: #fff;
+}
+.swiper-button-prev:hover{
+    border-color: #fff;
+    color: #fff !important;
 }
 
 .project-heading{

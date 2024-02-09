@@ -89,7 +89,7 @@ function popup_card(){
 
   var pro=document.querySelectorAll(".swiper-slide1")
   var popu=document.querySelectorAll("#details-main:not(.details)")
-  var cross=document.querySelector("#cross")
+  var cross=document.querySelector("#banner>svg")
   console.log(popu);
   
   
