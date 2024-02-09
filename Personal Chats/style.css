@@ -135,6 +135,7 @@ input:focus {
     background-color: rgba(255, 255, 255, 0);
     border: 3px solid #BCBCBC;
     color: #BCBCBC;
+    cursor: pointer;
 }
 
 #global:hover{
@@ -278,7 +279,7 @@ input:focus {
     gap: 10px;
 }
 
-#attach img:hover{
+#attach>svg:hover>path{
     fill: #fff;
     cursor: pointer;
 }
