@@ -55,7 +55,7 @@ nav{
     top: 0;
     left: 0;
     width: 100vw;
-    background-color: #2F3D52;
+    background-color: #1A1A1A;
     height: 80px;
     padding: 0px 50px;
     display: flex;
@@ -74,7 +74,7 @@ nav{
 
 #left{
     width: 50vw;
-    background-color: #2F3D53;
+    background-color: #1A1A1A;
     padding: 0px 50px;
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@ nav{
 }
 
 #left h1 span{
-    color: #6AD688;
+    color: #FBC16BE0;
     font-weight: 700;
 }
 
@@ -132,7 +132,7 @@ nav{
 }
 #para1{
     padding-top: 20px;
-    border-bottom: 8px solid #6AD688;
+    border-bottom: 8px solid #FBC16BE0;
 
 }
 #right{
@@ -166,7 +166,7 @@ nav{
 #box{
     position: relative;
     z-index: 20;
-    background-color:#2F3D52;
+    background-color:#1A1A1A;
     height: 200px;
     width: 70%;
     min-width: 440px;
@@ -180,7 +180,7 @@ nav{
 }
 #box h3{
     cursor: pointer;
-    background-color: #45556C;
+    background-color: #272727;
     width: 70%;
     height: 20%;
     display: flex;
