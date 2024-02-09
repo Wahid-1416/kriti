@@ -250,7 +250,6 @@ input:focus {
     scrollbar-width: none;  /* Firefox */
 }
 #details{
-    z-index: -4;
     max-width: 900px;
     margin: auto;
     margin-top: 20px;
@@ -359,7 +358,7 @@ input:focus {
 
 
 #linker button{
-    
+    cursor: pointer;
     background-color: #0d0d0d;
     color: #BCBCBC;
     border: none;
