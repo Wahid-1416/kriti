@@ -172,6 +172,15 @@ input:focus {
 }
 
 
+#self3>svg>path:hover{
+    fill: #FFFFFF;
+    cursor: pointer;
+}
+
+
+
+
+
 #self4{
     display: flex;
     flex-wrap: wrap;
@@ -205,19 +214,27 @@ input:focus {
     align-items: center;
     gap: 20px;
     box-shadow: 0px 4px 4px 0px #00000040;
-
+    cursor: pointer;
+    color: #BCBCBC;
 }
 #Edit>span{
-    color: #BCBCBC;
     font-weight: 300;
     font-size: 20px;
 }
 
+#Edit:hover{
+    color: #fff;
+}
+
 #self5>h3{
+    color: #BCBCBC;
     font-weight: 300;
     font-size: 16px;
 }
-
+#self5>h3:hover{
+    color: #fff;
+    cursor: pointer;
+}
 
 
 
@@ -265,7 +282,6 @@ input:focus {
     justify-content: space-evenly;
     overflow-y: scroll;
     gap: 20px;
-    /* background-color: red; */
 }
 
 
@@ -360,7 +376,7 @@ input:focus {
 
 
 #circle{
-    border: 1px solid white;
+    border: 1px solid #BCBCBC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -372,7 +388,24 @@ input:focus {
 #upload>div>p{
     border: 1px solid #BCBCBC;
     font-weight: 300;
+    color: #BCBCBC;
     font-size: 16px;
     padding: 12px 16px;
     border-radius: 4px;
+}
+
+#upload>div{
+    cursor: pointer;
+}
+
+
+#upload>div:hover>p{
+    border-color: #fff;
+    color: #fff !important;
+}
+#upload>div:hover>#circle{
+    border-color: #fff !important;
+}
+#upload>div:hover>#circle>svg>g>g>g{
+    fill: #fff;
 }
