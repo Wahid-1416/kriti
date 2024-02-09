@@ -577,6 +577,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #addFeedbackButton>div:hover>span{
     color: #FFFFFF;
 }
+#addFeedbackButton>div:hover>svg>path{
+    fill: #fff;
+}
+
 
 #addFeedbackButton>div>span{
     padding-right: 15px;
