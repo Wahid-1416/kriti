@@ -192,20 +192,26 @@ nav{
 }
 #box h3 a{
     text-decoration: none;
-    color: #F4EFEC;
+    color: #BCBCBC;
     font-family: 'Helvetica Now Display';
     font-weight: 300;
     font-size: 20px;
+    padding-left: 20px;
 
 }
-#box h3 img{
-    height: 60%;
-    padding-right: 20px;
+
+
+#box>h3>svg>path{
+    fill: #BCBCBC;
 }
 
 
-
-
+#box>h3:hover>svg>path{
+    fill: #fff;
+}
+#box>h3:hover>a{
+    color: #fff;
+}
 
 
 
