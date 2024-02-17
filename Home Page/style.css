@@ -702,6 +702,7 @@ inf{
     object-fit: cover;
 }
 .sw-details{
+    height: calc(100vh - );
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     padding: 20px;
@@ -765,6 +766,7 @@ inf{
     display: flex;
     flex-direction: column;
     gap: 100px;
+    
 
 }
 

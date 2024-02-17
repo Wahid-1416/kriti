@@ -30,7 +30,7 @@ function star(){
   const stars = document.querySelectorAll('.star-s');
   
   let selectedRating = 0;
-  
+  let finalrating=0;
   stars.forEach((star) => {
     star.addEventListener('mouseover', () => {
       const rating = parseInt(star.getAttribute('data-rating'));
@@ -44,6 +44,7 @@ function star(){
     star.addEventListener('click', () => {
       selectedRating = parseInt(star.getAttribute('data-rating'));
       displayUserRating(selectedRating);
+      finalrating=selectedRating;
     });
   });
   
@@ -57,6 +58,7 @@ function star(){
       }
     });
   }
+  
 
 }  
 
